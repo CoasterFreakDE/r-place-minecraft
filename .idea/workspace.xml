@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="PaperMC-Plugin-Boilerplate:jar" />
+      <artifact name="RPlace:jar" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
@@ -10,7 +10,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff31960a-d3cf-414c-b552-a7f8295cda0d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/one/devsky/rplace/extensions/BaseExtensions.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/PaperMC_Plugin_Boilerplate_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/RPlace_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/one/devsky/boilerplates/PaperBoilerplate.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/one/devsky/rplace/RPlace.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/one/devsky/boilerplates/annotations/RegisterCommand.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/one/devsky/rplace/annotations/RegisterCommand.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/one/devsky/boilerplates/commands/TemplateCommand.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/one/devsky/rplace/commands/SetCanvasCommand.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/one/devsky/boilerplates/listeners/TemplateListener.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/one/devsky/rplace/listeners/CanvasListener.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/one/devsky/boilerplates/managers/RegisterManager.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/one/devsky/rplace/managers/RegisterManager.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +40,7 @@
         <option value="Kotlin Object" />
         <option value="Kotlin Annotation" />
         <option value="Kotlin Class" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
@@ -48,7 +61,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "F:/Dokumente/Projects/Kotlin/Minecraft/Boilerplates/PaperMC-Plugin-Boilerplate/src/main/resources/plugin.yml",
+    "last_opened_file_path": "F:/Dokumente/Projects/Kotlin/Minecraft/Others/r-place-minecraft/src/main/resources/plugin.yml",
     "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",

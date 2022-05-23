@@ -1,13 +1,13 @@
-package one.devsky.boilerplates
+package one.devsky.rplace
 
-import one.devsky.boilerplates.managers.RegisterManager.registerAll
+import one.devsky.rplace.managers.RegisterManager.registerAll
 import org.bukkit.plugin.java.JavaPlugin
 import kotlin.system.measureTimeMillis
 
-class PaperBoilerplate : JavaPlugin() {
+class RPlace : JavaPlugin() {
 
     companion object {
-        lateinit var instance: PaperBoilerplate
+        lateinit var instance: RPlace
             private set
     }
 

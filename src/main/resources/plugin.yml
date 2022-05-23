@@ -1,6 +1,6 @@
-name: PaperBoilerplate
-main: one.devsky.boilerplates.PaperBoilerplate
+name: RPlace
+main: one.devsky.rplace.RPlace
 version: 1.18.2
-description: "This is a template for a new plugin based on MoltenKT and Paper."
+description: "Canvas for R-Place project"
 author: "CoasterFreakDE"
 api-version: 1.18

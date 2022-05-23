@@ -1,7 +1,7 @@
-package one.devsky.boilerplates.managers
+package one.devsky.rplace.managers
 
-import one.devsky.boilerplates.PaperBoilerplate
-import one.devsky.boilerplates.annotations.RegisterCommand
+import one.devsky.rplace.RPlace
+import one.devsky.rplace.annotations.RegisterCommand
 import org.bukkit.Bukkit
 import org.bukkit.command.CommandExecutor
 import org.bukkit.command.PluginCommand
@@ -12,13 +12,8 @@ import org.reflections8.Reflections
 import kotlin.system.measureTimeMillis
 
 object RegisterManager {
-
-    /**
-     * Register all commands and listeners from the plugin
-     * Todo: Change the reflections path to match your package structure
-     */
     fun registerAll() {
-        val reflections = Reflections("one.devsky.boilerplates")
+        val reflections = Reflections("one.devsky.rplace")
 
         val timeListeners = measureTimeMillis {
             for (clazz in reflections.getSubTypesOf(Listener::class.java)) {
@@ -29,7 +24,7 @@ object RegisterManager {
 
                     val event = constructor.newInstance() as Listener
 
-                    Bukkit.getPluginManager().registerEvents(event, PaperBoilerplate.instance)
+                    Bukkit.getPluginManager().registerEvents(event, RPlace.instance)
                     Bukkit.getConsoleSender()
                         .sendMessage("Listener ${event.javaClass.simpleName} registered")
                 } catch (exception: InstantiationError) {
@@ -51,14 +46,14 @@ object RegisterManager {
 
                     constructor.isAccessible = true
 
-                    val command: PluginCommand = constructor.newInstance(annotation.name, PaperBoilerplate.instance)
+                    val command: PluginCommand = constructor.newInstance(annotation.name, RPlace.instance)
 
                     command.aliases = annotation.aliases.toList()
                     command.description = annotation.description
                     command.permission = Permission(annotation.permission, annotation.permissionDefault).name
                     command.setExecutor(clazz.getDeclaredConstructor().newInstance() as CommandExecutor)
 
-                    Bukkit.getCommandMap().register(PaperBoilerplate.instance.name.lowercase(), command)
+                    Bukkit.getCommandMap().register(RPlace.instance.name.lowercase(), command)
                     Bukkit.getConsoleSender().sendMessage("Command ${command.name} registered")
                 } catch (exception: InstantiationError) {
                     exception.printStackTrace()

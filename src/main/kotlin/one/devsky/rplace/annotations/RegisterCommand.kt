@@ -1,4 +1,4 @@
-package one.devsky.boilerplates.annotations
+package one.devsky.rplace.annotations
 
 import org.bukkit.permissions.PermissionDefault
 
